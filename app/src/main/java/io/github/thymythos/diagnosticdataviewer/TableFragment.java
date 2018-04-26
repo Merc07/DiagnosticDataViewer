@@ -52,7 +52,7 @@ public class TableFragment extends Fragment implements LiveDataFragment {
         int row = -1;
         int col = -1;
         for (int i = 0; i < maxRPM.length; i++) {
-            if (minRPM[i] <= rpm && rpm <= maxRPM[i]) row = 16-i;
+            if (minRPM[i] <= rpm && rpm <= maxRPM[i]) row = 15-i;
             if (minTPS[i] <= tps && tps <= maxTPS[i]) col = 15-i;
         }
         // TODO: Change color gradually when the cell is hit more than once
@@ -140,7 +140,7 @@ public class TableFragment extends Fragment implements LiveDataFragment {
             text.setPadding(15, 0, 15, 0);
 
             if (row == 16) text.setText("");
-            else text.setText(NUM_FORMAT.format(rpmBins.getFloat(17 - row, 0) / 1000f));
+            else text.setText(NUM_FORMAT.format(rpmBins.getFloat(16 - row, 0) / 1000f));
 
             tableRow.addView(text);
 

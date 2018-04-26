@@ -566,6 +566,7 @@ public class MainActivity extends AppCompatActivity
         } else if (menuId == R.id.nav_table_view) {
             Bundle bundle = new Bundle();
             // TODO Select IDs depending on current motorcycle
+            // we have motorcycleModel =  'A':0 to 'L':12
             bundle.putInt(TableFragment.ARG_RPM_MOT_ID, R.array.rpm_mot_A);
             bundle.putInt(TableFragment.ARG_TPS_MOT_ID, R.array.tps_mot_A);
             fragment = TableFragment.newInstance();
