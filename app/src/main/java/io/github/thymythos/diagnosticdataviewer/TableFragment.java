@@ -35,6 +35,7 @@ public class TableFragment extends Fragment implements LiveDataFragment {
     private TextView[][] textViews = null;
 
     private GradientDrawable gdGreen;
+    private GradientDrawable gdAmber;
     private GradientDrawable gdRed;
     private float rpm = 0;
 
@@ -55,8 +56,14 @@ public class TableFragment extends Fragment implements LiveDataFragment {
             if (minRPM[i] <= rpm && rpm <= maxRPM[i]) row = 15-i;
             if (minTPS[i] <= tps && tps <= maxTPS[i]) col = 15-i;
         }
-        // TODO: Change color gradually when the cell is hit more than once
-        if (row != -1 && col != -1) textViews[row][col].setBackground(gdGreen);
+        // Change color from red/amber/green when the cell is hit more than once
+        if (row != -1 && col != -1 ) {
+            if (textViews[row][col].getBackground() == gdRed) {
+                textViews[row][col].setBackground(gdAmber);
+            } else if (textViews[row][col].getBackground() == gdAmber) {
+                textViews[row][col].setBackground(gdGreen);
+            }
+        }
     }
 
     @Override
@@ -120,6 +127,10 @@ public class TableFragment extends Fragment implements LiveDataFragment {
         gdGreen.setColor(0xFF00FF00);
         gdGreen.setCornerRadius(5);
         gdGreen.setStroke(1, 0xFF000000);
+        gdAmber = new GradientDrawable();
+        gdAmber.setColor(0xFFFFBF00);
+        gdAmber.setCornerRadius(5);
+        gdAmber.setStroke(1, 0xFF000000);
         gdRed = new GradientDrawable();
         gdRed.setColor(0xFFFF1010);
         gdRed.setCornerRadius(5);
