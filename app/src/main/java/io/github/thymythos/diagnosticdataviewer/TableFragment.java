@@ -24,8 +24,8 @@ import static android.view.Gravity.CENTER_VERTICAL;
 public class TableFragment extends Fragment implements LiveDataFragment {
 
     private final DecimalFormat NUM_FORMAT = new DecimalFormat("#0.0");
-    private final int[] RPM_BINS = new int[]{0, 900, 1200, 1800, 2500, 3000, 3500, 4000, 4500, 5000, 6000, 7000, 8000, 9500, 11000, 11800, 12500, 13500};
-    private final float[] TPS_BINS = new float[]{0, 1.8f, 2.3f, 2.5f, 3.3f, 4.2f, 5.6f, 7.1f, 9.1f, 12, 16, 21, 28, 37, 48, 61, 78, 141};
+    private final int[] RPM_BINS = new int[]{0, 900, 1200, 1800, 2500, 3000, 3500, 4000, 4500, 5000, 6000, 7000, 8000, 9500, 11000, 11800, 12500, 16000};
+    private final float[] TPS_BINS = new float[]{0, 1.8f, 2.3f, 2.5f, 3.3f, 4.2f, 5.6f, 7.1f, 9.1f, 12, 16, 21, 28, 37, 48, 61, 78, 200};
 
     private int[] maxRPM = new int[RPM_BINS.length - 2];
     private int[] minRPM = new int[RPM_BINS.length - 2];
@@ -51,7 +51,7 @@ public class TableFragment extends Fragment implements LiveDataFragment {
         int row = -1;
         int col = -1;
         for (int i = 0; i < maxRPM.length; i++) {
-            if (minRPM[i] <= rpm && rpm <= maxRPM[i]) row = 16-i;
+            if (minRPM[i] <= rpm && rpm <= maxRPM[i]) row = 15-i;
             if (minTPS[i] <= tps && tps <= maxTPS[i]) col = 15-i;
         }
         // TODO: Change color gradually when the cell is hit more than once
@@ -127,7 +127,7 @@ public class TableFragment extends Fragment implements LiveDataFragment {
             text.setPadding(15, 0, 15, 0);
 
             if (row == 16) text.setText("");
-            else text.setText(NUM_FORMAT.format(RPM_BINS[17 - row] / 1000f));
+            else text.setText(NUM_FORMAT.format(RPM_BINS[16 - row] / 1000f));
 
             tableRow.addView(text);
 
