@@ -146,7 +146,7 @@ public class MainActivity extends AppCompatActivity
 
                     if (fragment instanceof LiveDataFragment) {
                         LiveDataFragment dataFragment = (LiveDataFragment) fragment;
-                        dataFragment.setRPM(Float.valueOf(separated[1]));
+                        dataFragment.setRPM(Integer.valueOf(separated[1]));
                     }
                     displayLogTime();
                     break;

@@ -46,7 +46,7 @@ public class TableFragment extends Fragment implements LiveDataFragment {
     }
 
     @Override
-    public void setRPM(float rpm) {
+    public void setRPM(int rpm) {
         this.rpm = rpm;
     }
 

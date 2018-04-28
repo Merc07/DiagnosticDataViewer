@@ -2,7 +2,7 @@ package io.github.thymythos.diagnosticdataviewer;
 
 public interface LiveDataFragment {
 
-    public void setRPM(float rpm);
+    public void setRPM(int rpm);
 
     public void setTPS(float tps);
 

@@ -27,7 +27,7 @@ public class AFRFragment extends Fragment implements LiveDataFragment {
     }
 
     @Override
-    public void setRPM(float rpm) {
+    public void setRPM(int rpm) {
     }
 
     @Override

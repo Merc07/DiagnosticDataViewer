@@ -25,7 +25,7 @@ public class IdleFragment extends Fragment implements LiveDataFragment {
     }
 
     @Override
-    public void setRPM(float rpm) {
+    public void setRPM(int rpm) {
         Gauge gauge = getView().findViewById(R.id.gaugeRPM);
         gauge.setDeltaTimeInterval(1);
         gauge.setLowerText(String.valueOf(rpm));
