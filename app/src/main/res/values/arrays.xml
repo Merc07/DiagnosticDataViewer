@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="rpm_mot_A">
+        <item>0</item>
+        <item>900</item>
+        <item>1200</item>
+        <item>1800</item>
+        <item>2500</item>
+        <item>3000</item>
+        <item>3500</item>
+        <item>4000</item>
+        <item>4500</item>
+        <item>5000</item>
+        <item>6000</item>
+        <item>7000</item>
+        <item>8000</item>
+        <item>9500</item>
+        <item>11000</item>
+        <item>11800</item>
+        <item>12500</item>
+        <item>16000</item>
+    </array>
+    <array name="tps_mot_A">
+        <item>0</item>
+        <item>1.8</item>
+        <item>2.3</item>
+        <item>2.5</item>
+        <item>3.2</item>
+        <item>4.2</item>
+        <item>5.6</item>
+        <item>7.1</item>
+        <item>9.1</item>
+        <item>12.1</item>
+        <item>16.1</item>
+        <item>21.2</item>
+        <item>28.3</item>
+        <item>37.3</item>
+        <item>48.4</item>
+        <item>60.6</item>
+        <item>78.2</item>
+        <item>200</item>
+    </array>
+    <array name="rpm_mot_B">
+        <item>0</item>
+        <item>900</item>
+        <item>1150</item>
+        <item>1800</item>
+        <item>2700</item>
+        <item>3000</item>
+        <item>3500</item>
+        <item>5000</item>
+        <item>6000</item>
+        <item>7000</item>
+        <item>8000</item>
+        <item>9250</item>
+        <item>10500</item>
+        <item>11700</item>
+        <item>12700</item>
+        <item>13200</item>
+        <item>13800</item>
+        <item>16000</item>
+    </array>
+    <array name="tps_mot_B">
+        <item>0</item>
+        <item>1.1</item>
+        <item>1.5</item>
+        <item>2.5</item>
+        <item>3.0</item>
+        <item>4.0</item>
+        <item>5.6</item>
+        <item>7.1</item>
+        <item>9.1</item>
+        <item>12.1</item>
+        <item>16.1</item>
+        <item>21.2</item>
+        <item>28.3</item>
+        <item>37.3</item>
+        <item>48.4</item>
+        <item>60.6</item>
+        <item>78.2</item>
+        <item>200</item>
+    </array>
+</resources>
