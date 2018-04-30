@@ -38,7 +38,7 @@ public class TableFragment extends Fragment implements LiveDataFragment {
     private GradientDrawable gdAmber;
     private GradientDrawable gdRed;
 
-    private float rpm = 0;
+    private int rpm = 0;
 
     public TableFragment() {
         // Required empty public constructor
