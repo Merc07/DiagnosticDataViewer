@@ -8,8 +8,6 @@ import android.view.Gravity;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.view.animation.AlphaAnimation;
-import android.view.animation.Animation;
 import android.widget.TableLayout;
 import android.widget.TableRow;
 import android.widget.TextView;
@@ -39,6 +37,7 @@ public class TableFragment extends Fragment implements LiveDataFragment {
     private GradientDrawable gdGreen;
     private GradientDrawable gdAmber;
     private GradientDrawable gdRed;
+
     private float rpm = 0;
 
     public TableFragment() {
@@ -66,11 +65,7 @@ public class TableFragment extends Fragment implements LiveDataFragment {
             } else if (textViews[row][col].getBackground() == gdAmber) {
                 textViews[row][col].setBackground(gdGreen);
             }
-            Animation anim = new AlphaAnimation(0.0f,1.0f);
-            anim.setDuration(250);
-            anim.setStartOffset(0);
-            anim.setRepeatMode(Animation.REVERSE);
-            textViews[row][col].startAnimation(anim);
+
         }
     }
 
