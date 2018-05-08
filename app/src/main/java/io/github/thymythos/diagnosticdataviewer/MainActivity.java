@@ -192,7 +192,7 @@ public class MainActivity extends AppCompatActivity
                     }
                     if (fragment instanceof LiveDataFragment) {
                         LiveDataFragment dataFragment = (LiveDataFragment) fragment;
-                        dataFragment.setAFR1(afr2Value);
+                        dataFragment.setAFR2(afr2Value);
                     }
                     break;
                 case 5:
@@ -345,6 +345,7 @@ public class MainActivity extends AppCompatActivity
                     navigateToFragment(R.id.nav_startup_view);
                     break;
                 case 17: // fast logging
+                    disconnectBluetooth();
                     navigateToFragment(R.id.fastLogging);
                     break;
             }
@@ -514,7 +515,7 @@ public class MainActivity extends AppCompatActivity
         } else {
             menu.findItem(R.id.menu_connect).setVisible(true);
             menu.findItem(R.id.menu_disconnect).setVisible(false);
-            navigateToFragment(R.id.nav_startup_view);
+            //navigateToFragment(R.id.nav_startup_view);
         }
         return true;
     }
@@ -527,15 +528,19 @@ public class MainActivity extends AppCompatActivity
                 startActivity(intent);
                 break;
             case R.id.menu_disconnect:
-                SharedPreferences settings = getSharedPreferences(SETTINGS_BLUETOOTH, MODE_PRIVATE);
-                SharedPreferences.Editor editor = settings.edit();
-                editor.remove(SETTING_DEVICE_ADDRESS).apply();
-                mBluetoothLeService.disconnect();
+                disconnectBluetooth ();
                 break;
             case R.id.menu_settings:
                 break;
         }
         return true;
+    }
+
+    private void disconnectBluetooth () {
+        SharedPreferences settings = getSharedPreferences(SETTINGS_BLUETOOTH, MODE_PRIVATE);
+        SharedPreferences.Editor editor = settings.edit();
+        editor.remove(SETTING_DEVICE_ADDRESS).apply();
+        mBluetoothLeService.disconnect();
     }
 
     @Override
