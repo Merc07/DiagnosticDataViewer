@@ -93,6 +93,7 @@ public class TableFragment extends Fragment implements LiveDataFragment {
     }
 
     @Override
+    @SuppressWarnings("ResourceType")
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         int rpmMotId = getArguments().getInt(ARG_RPM_MOT_ID);
@@ -102,8 +103,6 @@ public class TableFragment extends Fragment implements LiveDataFragment {
 
         // Inflate the layout for this fragment
         View view = inflater.inflate(R.layout.fragment_table, container, false);
-
-        float TPSclosed = 2.1f;
 
         maxRPM = new int[rpmBins.length() - 2];
         minRPM = new int[rpmBins.length() - 2];
@@ -124,7 +123,8 @@ public class TableFragment extends Fragment implements LiveDataFragment {
             maxRPM[i - 1] = (int) (rpmBins.getFloat(i, 0) + maxDiff);
 
         }
-        minTPS[1] = TPSclosed * 0.9f;
+
+        minTPS[1] = tpsBins.getFloat(18, 0) * 0.9f; // TPS Closed * 0.9
 
         gdGreen = new GradientDrawable();
         gdGreen.setColor(0xFF00FF00);

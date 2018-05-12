@@ -572,8 +572,24 @@ public class MainActivity extends AppCompatActivity
             Bundle bundle = new Bundle();
             // TODO Select IDs depending on current motorcycle
             // we have motorcycleModel =  'A':0 to 'L':12
-            bundle.putInt(TableFragment.ARG_RPM_MOT_ID, R.array.rpm_mot_A);
-            bundle.putInt(TableFragment.ARG_TPS_MOT_ID, R.array.tps_mot_A);
+          switch (motorcycleModel) {
+              case 0:
+                  bundle.putInt(TableFragment.ARG_RPM_MOT_ID, R.array.rpm_mot_A);
+                  bundle.putInt(TableFragment.ARG_TPS_MOT_ID, R.array.tps_mot_A);
+                  break;
+              case 1:
+                  bundle.putInt(TableFragment.ARG_RPM_MOT_ID, R.array.rpm_mot_B);
+                  bundle.putInt(TableFragment.ARG_TPS_MOT_ID, R.array.tps_mot_B);
+                  break;
+              case 2:
+                  bundle.putInt(TableFragment.ARG_RPM_MOT_ID, R.array.rpm_mot_C);
+                  bundle.putInt(TableFragment.ARG_TPS_MOT_ID, R.array.tps_mot_C);
+                  break;
+              case 3:
+                  bundle.putInt(TableFragment.ARG_RPM_MOT_ID, R.array.rpm_mot_D);
+                  bundle.putInt(TableFragment.ARG_TPS_MOT_ID, R.array.tps_mot_D);
+                  break;
+          }
             fragment = TableFragment.newInstance();
             fragment.setArguments(bundle);
             title = R.string.table_title;

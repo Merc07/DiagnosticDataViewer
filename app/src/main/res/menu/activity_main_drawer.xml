@@ -10,7 +10,7 @@
             android:title="@string/info_menu" />
         <item
             android:id="@+id/nav_idle_view"
-            android:icon="@drawable/ic_afr"
+            android:icon="@drawable/ic_afr_idle"
             android:title="@string/idle_menu" />
         <item
             android:id="@+id/nav_afr_view"
@@ -21,13 +21,13 @@
             android:icon="@drawable/ic_monitor"
             android:title="@string/monitor_menu" />
         <item
-            android:id="@+id/nav_graph_view"
-            android:icon="@drawable/ic_graph"
-            android:title="@string/graph_menu" />
-        <item
             android:id="@+id/nav_table_view"
             android:icon="@drawable/ic_map"
             android:title="@string/table_menu" />
+        <item
+            android:id="@+id/nav_graph_view"
+            android:icon="@drawable/ic_graph"
+            android:title="@string/graph_menu" />
         <item
             android:id="@+id/nav_actuator_view"
             android:icon="@drawable/ic_check"
