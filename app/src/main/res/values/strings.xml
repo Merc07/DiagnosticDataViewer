@@ -101,7 +101,7 @@
     <string name="LoggerResult_label">Result</string>
     <string name="Bluetooth_label">Bluetooth Module</string>
     <string name="Bluetooth_result">- - - -</string>
-    <string name="Firmware_label">Firmware Version</string>
+    <string name="Firmware_label">Firmware</string>
     <string name="Firmware_result">- - - -</string>
     <string name="Calibration_label">5v Calibration</string>
     <string name="Calibration_result">- - - -</string>

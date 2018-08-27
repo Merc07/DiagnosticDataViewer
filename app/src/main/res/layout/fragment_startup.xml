@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/nav_startup"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
-
 
 
     <android.support.constraint.ConstraintLayout
@@ -15,314 +15,501 @@
         android:layout_row="1">
 
 
-        <TextView
+        <android.support.v7.widget.AppCompatTextView
             android:id="@+id/label_LoggerInfo"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="25dp"
-            android:layout_marginTop="20dp"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginTop="24dp"
             android:text="@string/Logger_label"
-            android:textSize="18sp"
             android:textStyle="bold"
-            app:layout_constraintStart_toStartOf="parent"
+            app:autoSizeTextType="uniform"
+            app:layout_constraintBottom_toTopOf="@+id/guideline13"
+            app:layout_constraintEnd_toStartOf="@+id/guideline31"
+            app:layout_constraintStart_toStartOf="@+id/guideline10"
             app:layout_constraintTop_toTopOf="parent" />
 
-        <TextView
+
+        <android.support.v7.widget.AppCompatTextView
             android:id="@+id/label_LoggerResult"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginEnd="25dp"
-            android:layout_marginTop="20dp"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginTop="24dp"
             android:text="@string/LoggerResult_label"
             android:textAlignment="textEnd"
-            android:textSize="18sp"
             android:textStyle="bold"
-            app:layout_constraintEnd_toEndOf="parent"
+            app:autoSizeTextType="uniform"
+            app:layout_constraintBottom_toTopOf="@+id/guideline13"
+            app:layout_constraintEnd_toStartOf="@+id/guideline32"
+            app:layout_constraintStart_toStartOf="@+id/guideline31"
             app:layout_constraintTop_toTopOf="parent" />
 
 
-        <TextView
+        <android.support.v7.widget.AppCompatTextView
             android:id="@+id/label_Ignition"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="20dp"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginTop="5dp"
             android:text="@string/Ignition_label"
-            android:textSize="16sp"
-            app:layout_constraintStart_toStartOf="@+id/label_LoggerInfo"
-            app:layout_constraintTop_toBottomOf="@+id/label_LoggerInfo" />
+            app:autoSizeTextType="uniform"
+            app:layout_constraintBottom_toTopOf="@+id/guideline15"
+            app:layout_constraintEnd_toStartOf="@+id/guideline31"
+            app:layout_constraintStart_toStartOf="@+id/guideline10"
+            app:layout_constraintTop_toTopOf="@+id/guideline14" />
 
-        <TextView
+        <android.support.v7.widget.AppCompatTextView
             android:id="@+id/label_Ignition_result"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="20dp"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginBottom="1dp"
+            android:layout_marginTop="5dp"
             android:text="@string/Ignition_result"
             android:textAlignment="textEnd"
-            android:textSize="16sp"
-            app:layout_constraintEnd_toEndOf="@+id/label_LoggerResult"
-            app:layout_constraintTop_toBottomOf="@+id/label_LoggerResult" />
+            app:autoSizeTextType="uniform"
+            app:layout_constraintBottom_toTopOf="@+id/guideline15"
+            app:layout_constraintEnd_toStartOf="@+id/guideline32"
+            app:layout_constraintStart_toStartOf="@+id/guideline31"
+            app:layout_constraintTop_toTopOf="@+id/guideline14" />
 
-        <TextView
+        <android.support.v7.widget.AppCompatTextView
             android:id="@+id/label_SDcard"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="8dp"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginTop="5dp"
             android:text="@string/SD_Card_label"
-            android:textSize="16sp"
-            app:layout_constraintStart_toStartOf="@+id/label_Ignition"
-            app:layout_constraintTop_toBottomOf="@+id/label_Ignition" />
+            app:autoSizeTextType="uniform"
+            app:layout_constraintBottom_toTopOf="@+id/guideline16"
+            app:layout_constraintEnd_toStartOf="@+id/guideline31"
+            app:layout_constraintStart_toStartOf="@+id/guideline10"
+            app:layout_constraintTop_toTopOf="@+id/guideline15" />
 
-        <TextView
+        <android.support.v7.widget.AppCompatTextView
             android:id="@+id/label_SDcard_result"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="8dp"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginTop="5dp"
             android:text="@string/SD_Card_result"
             android:textAlignment="textEnd"
-            android:textSize="16sp"
-            app:layout_constraintEnd_toEndOf="@+id/label_Ignition_result"
-            app:layout_constraintTop_toBottomOf="@+id/label_Ignition_result" />
+            app:autoSizeTextType="uniform"
+            app:layout_constraintBottom_toTopOf="@+id/guideline16"
+            app:layout_constraintEnd_toStartOf="@+id/guideline32"
+            app:layout_constraintStart_toStartOf="@+id/guideline31"
+            app:layout_constraintTop_toTopOf="@+id/guideline15" />
 
 
-
-
-
-        <TextView
+        <android.support.v7.widget.AppCompatTextView
             android:id="@+id/label_Log"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="8dp"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginTop="5dp"
             android:text="@string/Log_label"
-            android:textAlignment="textEnd"
-            android:textSize="16sp"
-            app:layout_constraintStart_toStartOf="@+id/label_SDcard"
-            app:layout_constraintTop_toBottomOf="@+id/label_SDcard" />
+            app:autoSizeTextType="uniform"
+            app:layout_constraintBottom_toTopOf="@+id/guideline17"
+            app:layout_constraintEnd_toStartOf="@+id/guideline31"
+            app:layout_constraintStart_toStartOf="@+id/guideline10"
+            app:layout_constraintTop_toTopOf="@+id/guideline16" />
 
-        <TextView
+        <android.support.v7.widget.AppCompatTextView
             android:id="@+id/label_Log_result"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="8dp"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginTop="5dp"
             android:text="@string/Log_result"
-            android:textSize="16sp"
-            app:layout_constraintEnd_toEndOf="@+id/label_SDcard_result"
-            app:layout_constraintTop_toBottomOf="@+id/label_SDcard_result" />
+            android:textAlignment="textEnd"
+            app:autoSizeTextType="uniform"
+            app:layout_constraintBottom_toTopOf="@+id/guideline17"
+            app:layout_constraintEnd_toStartOf="@+id/guideline32"
+            app:layout_constraintStart_toStartOf="@+id/guideline31"
+            app:layout_constraintTop_toTopOf="@+id/guideline16" />
 
 
-        <TextView
+        <android.support.v7.widget.AppCompatTextView
             android:id="@+id/label_Firmware"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="8dp"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginTop="5dp"
             android:text="@string/Firmware_label"
-            android:textSize="16sp"
-            app:layout_constraintStart_toStartOf="@+id/label_Log"
-            app:layout_constraintTop_toBottomOf="@+id/label_Log" />
+            app:autoSizeTextType="uniform"
+            app:layout_constraintBottom_toTopOf="@+id/guideline18"
+            app:layout_constraintEnd_toStartOf="@+id/guideline31"
+            app:layout_constraintStart_toStartOf="@+id/guideline10"
+            app:layout_constraintTop_toTopOf="@+id/guideline17" />
 
-        <TextView
+        <android.support.v7.widget.AppCompatTextView
             android:id="@+id/label_Firmware_result"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="8dp"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginTop="5dp"
             android:text="@string/FuelPump_result"
             android:textAlignment="textEnd"
-            android:textSize="16sp"
-            app:layout_constraintEnd_toEndOf="@+id/label_Log_result"
-            app:layout_constraintTop_toBottomOf="@+id/label_Log_result" />
+            app:autoSizeTextType="uniform"
+            app:layout_constraintBottom_toTopOf="@+id/guideline18"
+            app:layout_constraintEnd_toStartOf="@+id/guideline32"
+            app:layout_constraintStart_toStartOf="@+id/guideline31"
+            app:layout_constraintTop_toTopOf="@+id/guideline17" />
 
 
-        <TextView
+        <android.support.v7.widget.AppCompatTextView
             android:id="@+id/label_Config"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="8dp"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginTop="5dp"
             android:text="@string/Config_label"
-            android:textSize="16sp"
-            app:layout_constraintStart_toStartOf="@+id/label_Firmware"
-            app:layout_constraintTop_toBottomOf="@+id/label_Firmware" />
+            app:autoSizeTextType="uniform"
+            app:layout_constraintBottom_toTopOf="@+id/guideline19"
+            app:layout_constraintEnd_toStartOf="@+id/guideline31"
+            app:layout_constraintStart_toStartOf="@+id/guideline10"
+            app:layout_constraintTop_toTopOf="@+id/guideline18" />
 
-        <TextView
+        <android.support.v7.widget.AppCompatTextView
             android:id="@+id/label_Config_result"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="8dp"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginTop="5dp"
             android:text="@string/Config_File_result"
             android:textAlignment="textEnd"
-            android:textSize="16sp"
-            app:layout_constraintEnd_toEndOf="@+id/label_Firmware_result"
-            app:layout_constraintTop_toBottomOf="@+id/label_Firmware_result" />
+            app:autoSizeTextType="uniform"
+            app:layout_constraintBottom_toTopOf="@+id/guideline19"
+            app:layout_constraintEnd_toStartOf="@+id/guideline32"
+            app:layout_constraintStart_toStartOf="@+id/guideline31"
+            app:layout_constraintTop_toTopOf="@+id/guideline18" />
 
-        <TextView
+        <android.support.v7.widget.AppCompatTextView
             android:id="@+id/label_AutoSwitch"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="8dp"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginTop="5dp"
             android:text="@string/Auto_Switch_label"
-            android:textSize="16sp"
-            app:layout_constraintStart_toStartOf="@+id/label_Config"
-            app:layout_constraintTop_toBottomOf="@+id/label_Config" />
+            app:autoSizeTextType="uniform"
+            app:layout_constraintBottom_toTopOf="@+id/guideline20"
+            app:layout_constraintEnd_toStartOf="@+id/guideline31"
+            app:layout_constraintStart_toStartOf="@+id/guideline10"
+            app:layout_constraintTop_toTopOf="@+id/guideline19" />
 
-        <TextView
+        <android.support.v7.widget.AppCompatTextView
             android:id="@+id/label_AutoSwitch_result"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="8dp"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginTop="5dp"
             android:text="@string/Auto_Switch_result"
             android:textAlignment="textEnd"
-            android:textSize="16sp"
-            app:layout_constraintEnd_toEndOf="@+id/label_Config_result"
-            app:layout_constraintTop_toBottomOf="@+id/label_Config_result" />
-
-        <TextView
+            app:autoSizeTextType="uniform"
+            app:layout_constraintBottom_toTopOf="@+id/guideline20"
+            app:layout_constraintEnd_toStartOf="@+id/guideline32"
+            app:layout_constraintStart_toStartOf="@+id/guideline31"
+            app:layout_constraintTop_toTopOf="@+id/guideline19" />
+        
+        <android.support.v7.widget.AppCompatTextView
             android:id="@+id/label_Mode"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="8dp"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginTop="5dp"
             android:text="@string/Mode_label"
-            android:textSize="16sp"
-            app:layout_constraintStart_toStartOf="@+id/label_AutoSwitch"
-            app:layout_constraintTop_toBottomOf="@+id/label_AutoSwitch" />
+            app:autoSizeTextType="uniform"
+            app:layout_constraintBottom_toTopOf="@+id/guideline21"
+            app:layout_constraintEnd_toStartOf="@+id/guideline31"
+            app:layout_constraintStart_toStartOf="@+id/guideline10"
+            app:layout_constraintTop_toTopOf="@+id/guideline20" />
 
-        <TextView
+        <android.support.v7.widget.AppCompatTextView
             android:id="@+id/label_Mode_result"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="8dp"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginTop="5dp"
             android:text="@string/Mode_result"
             android:textAlignment="textEnd"
-            android:textSize="16sp"
-            app:layout_constraintEnd_toEndOf="@+id/label_AutoSwitch_result"
-            app:layout_constraintTop_toBottomOf="@+id/label_AutoSwitch_result" />
+            app:autoSizeTextType="uniform"
+            app:layout_constraintBottom_toTopOf="@+id/guideline21"
+            app:layout_constraintEnd_toStartOf="@+id/guideline32"
+            app:layout_constraintStart_toStartOf="@+id/guideline31"
+            app:layout_constraintTop_toTopOf="@+id/guideline20" />
 
-        <TextView
+        <android.support.v7.widget.AppCompatTextView
             android:id="@+id/label_Motorcycle"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="8dp"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginTop="5dp"
             android:text="@string/Motorcycle_label"
-            android:textSize="16sp"
-            app:layout_constraintStart_toStartOf="@+id/label_Mode"
-            app:layout_constraintTop_toBottomOf="@+id/label_Mode" />
+            app:autoSizeTextType="uniform"
+            app:layout_constraintBottom_toTopOf="@+id/guideline22"
+            app:layout_constraintEnd_toStartOf="@+id/guideline31"
+            app:layout_constraintStart_toStartOf="@+id/guideline10"
+            app:layout_constraintTop_toTopOf="@+id/guideline21" />
 
-        <TextView
+        <android.support.v7.widget.AppCompatTextView
             android:id="@+id/label_Motorcycle_result"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="8dp"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginTop="5dp"
             android:text="@string/Motorcycle_result"
             android:textAlignment="textEnd"
-            android:textSize="16sp"
-            app:layout_constraintEnd_toEndOf="@+id/label_Mode_result"
-            app:layout_constraintTop_toBottomOf="@+id/label_Mode_result" />
+            app:autoSizeTextType="uniform"
+            app:layout_constraintBottom_toTopOf="@+id/guideline22"
+            app:layout_constraintEnd_toStartOf="@+id/guideline32"
+            app:layout_constraintStart_toStartOf="@+id/guideline31"
+            app:layout_constraintTop_toTopOf="@+id/guideline21" />
 
 
-        <TextView
+        <android.support.v7.widget.AppCompatTextView
             android:id="@+id/label_Fault_Codes"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="8dp"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginTop="5dp"
             android:text="@string/Fault_Codes_label"
-            android:textSize="16sp"
-            app:layout_constraintStart_toStartOf="@+id/label_Motorcycle"
-            app:layout_constraintTop_toBottomOf="@+id/label_Motorcycle" />
+            app:autoSizeTextType="uniform"
+            app:layout_constraintBottom_toTopOf="@+id/guideline23"
+            app:layout_constraintEnd_toStartOf="@+id/guideline31"
+            app:layout_constraintStart_toStartOf="@+id/guideline10"
+            app:layout_constraintTop_toTopOf="@+id/guideline22" />
 
-        <TextView
+        <android.support.v7.widget.AppCompatTextView
             android:id="@+id/label_Fault_Codes_result"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="8dp"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginTop="5dp"
             android:text="@string/Fault_Codes_result"
             android:textAlignment="textEnd"
-            android:textSize="16sp"
-            app:layout_constraintEnd_toEndOf="@+id/label_Motorcycle_result"
-            app:layout_constraintTop_toBottomOf="@+id/label_Motorcycle_result" />
+            app:autoSizeTextType="uniform"
+            app:layout_constraintBottom_toTopOf="@+id/guideline23"
+            app:layout_constraintEnd_toStartOf="@+id/guideline32"
+            app:layout_constraintStart_toStartOf="@+id/guideline31"
+            app:layout_constraintTop_toTopOf="@+id/guideline22" />
 
-        <TextView
+        <android.support.v7.widget.AppCompatTextView
             android:id="@+id/label_Fault_Clear"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="8dp"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginTop="5dp"
             android:text="@string/Fault_Clear_label"
-            android:textSize="16sp"
-            app:layout_constraintStart_toStartOf="@+id/label_Fault_Codes"
-            app:layout_constraintTop_toBottomOf="@+id/label_Fault_Codes" />
+            app:autoSizeTextType="uniform"
+            app:layout_constraintBottom_toTopOf="@+id/guideline24"
+            app:layout_constraintEnd_toStartOf="@+id/guideline31"
+            app:layout_constraintStart_toStartOf="@+id/guideline10"
+            app:layout_constraintTop_toTopOf="@+id/guideline23" />
 
-        <TextView
+        <android.support.v7.widget.AppCompatTextView
             android:id="@+id/label_Fault_Clear_result"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="8dp"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginTop="5dp"
             android:text="@string/Fault_Clear_result"
             android:textAlignment="textEnd"
-            android:textSize="16sp"
-            app:layout_constraintEnd_toEndOf="@+id/label_Fault_Codes_result"
-            app:layout_constraintTop_toBottomOf="@+id/label_Fault_Codes_result" />
+            app:autoSizeTextType="uniform"
+            app:layout_constraintBottom_toTopOf="@+id/guideline24"
+            app:layout_constraintEnd_toStartOf="@+id/guideline32"
+            app:layout_constraintStart_toStartOf="@+id/guideline31"
+            app:layout_constraintTop_toTopOf="@+id/guideline23" />
 
 
-
-
-
-        <TextView
+        <android.support.v7.widget.AppCompatTextView
             android:id="@+id/label_AFR"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="8dp"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginTop="5dp"
             android:text="@string/AFR_label"
-            android:textAlignment="textEnd"
-            android:textSize="16sp"
-            app:layout_constraintStart_toStartOf="@+id/label_Fault_Clear"
-            app:layout_constraintTop_toBottomOf="@+id/label_Fault_Clear" />
+            app:autoSizeTextType="uniform"
+            app:layout_constraintBottom_toTopOf="@+id/guideline25"
+            app:layout_constraintEnd_toStartOf="@+id/guideline31"
+            app:layout_constraintStart_toStartOf="@+id/guideline10"
+            app:layout_constraintTop_toTopOf="@+id/guideline24" />
 
-        <TextView
+        <android.support.v7.widget.AppCompatTextView
             android:id="@+id/label_AFR_result"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="8dp"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginTop="5dp"
             android:text="@string/AFR_result"
-            android:textSize="16sp"
-            app:layout_constraintEnd_toEndOf="@+id/label_Fault_Clear_result"
-            app:layout_constraintTop_toBottomOf="@+id/label_Fault_Clear_result" />
+            android:textAlignment="textEnd"
+            app:autoSizeTextType="uniform"
+            app:layout_constraintBottom_toTopOf="@+id/guideline25"
+            app:layout_constraintEnd_toStartOf="@+id/guideline32"
+            app:layout_constraintStart_toStartOf="@+id/guideline31"
+            app:layout_constraintTop_toTopOf="@+id/guideline24" />
 
-        <TextView
+        <android.support.v7.widget.AppCompatTextView
             android:id="@+id/label_Engine"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="8dp"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginTop="5dp"
             android:text="@string/Engine_label"
-            android:textSize="16sp"
-            app:layout_constraintStart_toStartOf="@+id/label_AFR"
-            app:layout_constraintTop_toBottomOf="@+id/label_AFR" />
+            app:autoSizeTextType="uniform"
+            app:layout_constraintBottom_toTopOf="@+id/guideline26"
+            app:layout_constraintEnd_toStartOf="@+id/guideline31"
+            app:layout_constraintStart_toStartOf="@+id/guideline10"
+            app:layout_constraintTop_toTopOf="@+id/guideline25" />
 
-        <TextView
+        <android.support.v7.widget.AppCompatTextView
             android:id="@+id/label_Engine_result"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="8dp"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginTop="5dp"
             android:text="@string/Engine_result"
             android:textAlignment="textEnd"
-            android:textSize="16sp"
-            app:layout_constraintEnd_toEndOf="@+id/label_AFR_result"
-            app:layout_constraintTop_toBottomOf="@+id/label_AFR_result" />
+            app:autoSizeTextType="uniform"
+            app:layout_constraintBottom_toTopOf="@+id/guideline26"
+            app:layout_constraintEnd_toStartOf="@+id/guideline32"
+            app:layout_constraintStart_toStartOf="@+id/guideline31"
+            app:layout_constraintTop_toTopOf="@+id/guideline25" />
 
 
-        <TextView
+        <android.support.v7.widget.AppCompatTextView
             android:id="@+id/label_Message_data"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="10dp"
-            android:layout_marginEnd="8dp"
-            android:layout_marginStart="8dp"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
             android:text="@string/Message_data"
             android:textAlignment="center"
             android:textColor="?attr/colorError"
-            android:textSize="22sp"
             android:textStyle="bold"
+            app:autoSizeTextType="uniform"
             app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent" />
+            app:layout_constraintEnd_toStartOf="@+id/guideline32"
+            app:layout_constraintStart_toStartOf="@+id/guideline10"
+            app:layout_constraintTop_toTopOf="@+id/guideline29" />
+
+        <android.support.constraint.Guideline
+            android:id="@+id/guideline12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent=".05" />
+
+        <android.support.constraint.Guideline
+            android:id="@+id/guideline13"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent=".1" />
+
+        <android.support.constraint.Guideline
+            android:id="@+id/guideline14"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent=".16" />
+
+        <android.support.constraint.Guideline
+            android:id="@+id/guideline15"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent=".22" />
+
+        <android.support.constraint.Guideline
+            android:id="@+id/guideline16"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent=".28" />
+
+        <android.support.constraint.Guideline
+            android:id="@+id/guideline17"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent=".34" />
+
+        <android.support.constraint.Guideline
+            android:id="@+id/guideline18"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent=".40" />
+
+        <android.support.constraint.Guideline
+            android:id="@+id/guideline19"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent=".46" />
+
+        <android.support.constraint.Guideline
+            android:id="@+id/guideline20"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent=".52" />
+
+        <android.support.constraint.Guideline
+            android:id="@+id/guideline21"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent=".58" />
+
+        <android.support.constraint.Guideline
+            android:id="@+id/guideline22"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent=".64" />
+
+        <android.support.constraint.Guideline
+            android:id="@+id/guideline23"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent=".7" />
+
+        <android.support.constraint.Guideline
+            android:id="@+id/guideline24"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent=".76" />
+
+        <android.support.constraint.Guideline
+            android:id="@+id/guideline25"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent=".82" />
+
+        <android.support.constraint.Guideline
+            android:id="@+id/guideline26"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent=".88" />
+
+
+        <android.support.constraint.Guideline
+            android:id="@+id/guideline29"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent=".9" />
+
+        <android.support.constraint.Guideline
+            android:id="@+id/guideline30"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent=".95" />
+
+        <android.support.constraint.Guideline
+            android:id="@+id/guideline10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.07" />
+
+        <android.support.constraint.Guideline
+            android:id="@+id/guideline31"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent=".55" />
+
+        <android.support.constraint.Guideline
+            android:id="@+id/guideline32"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent=".93" />
 
 
     </android.support.constraint.ConstraintLayout>
 
 
-</GridLayout>
+</RelativeLayout>
