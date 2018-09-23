@@ -60,7 +60,6 @@
             android:id="@+id/label_Ignition_result"
             android:layout_width="0dp"
             android:layout_height="0dp"
-            android:layout_marginBottom="1dp"
             android:layout_marginTop="5dp"
             android:text="@string/Ignition_result"
             android:textAlignment="textEnd"
@@ -174,11 +173,11 @@
             app:layout_constraintTop_toTopOf="@+id/guideline18" />
 
         <android.support.v7.widget.AppCompatTextView
-            android:id="@+id/label_AutoSwitch"
+            android:id="@+id/label_Mode"
             android:layout_width="0dp"
             android:layout_height="0dp"
             android:layout_marginTop="5dp"
-            android:text="@string/Auto_Switch_label"
+            android:text="@string/Mode_label"
             app:autoSizeTextType="uniform"
             app:layout_constraintBottom_toTopOf="@+id/guideline20"
             app:layout_constraintEnd_toStartOf="@+id/guideline31"
@@ -186,11 +185,11 @@
             app:layout_constraintTop_toTopOf="@+id/guideline19" />
 
         <android.support.v7.widget.AppCompatTextView
-            android:id="@+id/label_AutoSwitch_result"
+            android:id="@+id/label_Mode_result"
             android:layout_width="0dp"
             android:layout_height="0dp"
             android:layout_marginTop="5dp"
-            android:text="@string/Auto_Switch_result"
+            android:text="@string/Mode_result"
             android:textAlignment="textEnd"
             app:autoSizeTextType="uniform"
             app:layout_constraintBottom_toTopOf="@+id/guideline20"
@@ -199,11 +198,11 @@
             app:layout_constraintTop_toTopOf="@+id/guideline19" />
         
         <android.support.v7.widget.AppCompatTextView
-            android:id="@+id/label_Mode"
+            android:id="@+id/label_AutoSwitch"
             android:layout_width="0dp"
             android:layout_height="0dp"
             android:layout_marginTop="5dp"
-            android:text="@string/Mode_label"
+            android:text="@string/Auto_Switch_label"
             app:autoSizeTextType="uniform"
             app:layout_constraintBottom_toTopOf="@+id/guideline21"
             app:layout_constraintEnd_toStartOf="@+id/guideline31"
@@ -211,11 +210,11 @@
             app:layout_constraintTop_toTopOf="@+id/guideline20" />
 
         <android.support.v7.widget.AppCompatTextView
-            android:id="@+id/label_Mode_result"
+            android:id="@+id/label_AutoSwitch_result"
             android:layout_width="0dp"
             android:layout_height="0dp"
             android:layout_marginTop="5dp"
-            android:text="@string/Mode_result"
+            android:text="@string/Auto_Switch_result"
             android:textAlignment="textEnd"
             app:autoSizeTextType="uniform"
             app:layout_constraintBottom_toTopOf="@+id/guideline21"

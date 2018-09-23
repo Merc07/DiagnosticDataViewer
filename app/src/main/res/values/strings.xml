@@ -83,9 +83,9 @@
     <!-- Actuator Test -->
     <string name="ActuatorTest_label">Actuator</string>
     <string name="ActuatorResult_label">Result</string>
-    <string name="Injector1_label">Injector1</string>
+    <string name="Injector1_label">Injector 1</string>
     <string name="Injector1_result">- - - -</string>
-    <string name="Injector2_label">Injector2</string>
+    <string name="Injector2_label">Injector 2</string>
     <string name="Injector2_result">- - - -</string>
     <string name="Coil1_label">Coil 1</string>
     <string name="Coil1_result">- - - -</string>
@@ -167,10 +167,10 @@
     <string name="Mode4_message">Test</string>
 
     <string-array name="Motorcycles">
-        <item>MV Agusta F4 1000</item>
-        <item>MV Agusta F4 750</item>
-        <item>MV Agusta B4 910</item>
-        <item>MV Agusta B4 750</item>
+        <item>MV F4 1000</item>
+        <item>MV F4 750</item>
+        <item>MV B4 910</item>
+        <item>MV B4 750</item>
         <item>Ducati 996</item>
         <item>Ducati 916</item>
         <item>Ducati 748</item>
